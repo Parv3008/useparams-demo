@@ -1,4 +1,3 @@
-// Page2.jsx
 import React from 'react';
 import { useParams, useSearchParams, useOutletContext } from 'react-router-dom';
 
@@ -7,7 +6,7 @@ function Page2() {
   const [searchParams] = useSearchParams();
   const message = searchParams.get('message');
 
-  const context = useOutletContext(); // Access data passed from Layout
+  const context = useOutletContext(); 
   const { userId, appName } = context;
 
   return (
